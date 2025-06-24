@@ -75,7 +75,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  background: red;
+  background: #e30613;
   align-items: center;
   justify-content: space-between;
 }
@@ -125,19 +125,92 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero {
+  header {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
   }
 
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
-    text-align: right;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    display: block;
+    width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-text, .hero-right {
+    flex: 1 1 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .hero-right img {
+    max-width: 90vw;
+  }
+
+  .hero-right-text{
+    color:white;
+  }
+
+  .info {
+    padding: 1rem;
+    font-size: 1rem;
   }
 
   footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-info, .footer-social {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Extra responsive for very small screens */
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .hero {
+    padding: 0.5rem;
+  }
+  .info {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .footer-info, .footer-social {
+    margin-bottom: 0.5rem;
+  }
+  .footer-social a img {
+    width: 20px;
+  }
+  .imagen-contenedor {
+    margin-top: 10px;
+  }
+  .imagen-contenedor img {
+    border-radius: 4px;
   }
 }
