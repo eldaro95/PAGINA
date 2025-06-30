@@ -1,0 +1,412 @@
+/* ==============================
+   VARIABLES DE COLOR
+   ============================== */
+:root {
+  --color-principal: #E30613;
+  --color-principal-hover: #ff3d3d;
+  --color-texto: #333;
+  --color-fondo: #f9f9f9;
+  --color-blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+/* Header */
+#header {
+  background: #252122;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+#nav ul li a {
+  background: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+#nav ul li a:hover {
+  background: var(--color-principal-hover);
+}
+
+
+
+#nav-toggle {
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: var(--color-principal);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+
+  #nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--color-blanco);
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #nav ul.show {
+    display: flex;
+  }
+}
+
+/* Banner */
+#banner {
+  
+  background: url('../src/img/Inicio.jpg') center/cover no-repeat;
+  padding: 4em 1em;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+#banner header {
+  max-width: 50%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #banner header {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+#banner h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+  text-shadow: 1px 1px 2px black;
+  text-align: right;
+}
+
+#banner p {
+  font-size: 1.1em;
+  margin-top: 0;
+  text-shadow: 1px 1px 2px black;
+  text-align: right;
+}
+
+/* Secciones */
+section {
+  padding: 3em 0;
+}
+
+header.major {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header.major h2 {
+  font-size: 2em;
+  color: var(--color-texto);
+}
+
+/* Proyectos */
+.box {
+  background: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  justify-items: center;
+  height: auto;
+}
+
+.box h3 {
+  color: var(--color-principal);
+  margin-top: 1em;
+}
+
+.box p {
+  text-align: justify;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.col-4 {
+  flex: 1 1 calc(33.333% - 2em);
+}
+
+.col-6 {
+  flex: 1 1 calc(50% - 2em);
+}
+
+.col-12 {
+  flex: 1 1 100%;
+}
+
+@media (max-width: 768px) {
+  .col-4, .col-6 {
+    flex: 1 1 100%;
+  }
+}
+
+.box .image.featured {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.box .image.featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#nosotros {
+  background: #000000;
+  color: white;
+  padding: 3em 1em;
+  border-top: 10px solid var(--color-principal);
+  border-bottom: 10px solid var(--color-principal);
+}
+
+#nosotros h2 {
+  color: white;
+}
+ 
+#nosotros p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Footer */
+#footer {
+  background: #252122;
+  color: white;
+  padding: 3em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+#footer .footer-logo {
+  flex: 1 1 200px;
+}
+
+#footer .footer-logo img {
+  max-width: 150px;
+  margin-bottom: 1em;
+}
+
+#footer .footer-about,
+#footer .footer-links,
+#footer .footer-contact {
+  flex: 1 1 200px;
+}
+
+#footer h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li {
+  margin-bottom: 0.5em;
+}
+
+#footer ul li a {
+  color: #ddd;
+  font-size: 0.95em;
+}
+
+#footer ul.social {
+  display: flex;
+  gap: 0.8em;
+  margin-top: 1em;
+}
+
+#footer ul.social li a {
+  font-size: 1.5em;
+  color: white;
+  transition: color 0.3s;
+}
+
+#footer ul.social li a:hover {
+  color: var(--color-principal);
+}
+
+#footer .copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+
+/* Sección Carreras */
+#carreras {
+  background: #111;
+  color: white;
+  padding: 2em 0;
+}
+
+.carreras-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.carrera-box {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1.5em;
+  flex: 1 1 calc(33.333% - 2em);
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.contenido-carrera {
+  flex-grow: 1;
+}
+
+.carrera-box h3 {
+  margin-top: 1em;
+  color: var(--color-principal);
+}
+
+.carrera-box p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.carrera-box .image.featured {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.carrera-box .image.featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .carrera-box {
+    flex: 1 1 calc(50% - 2em);
+  }
+}
+
+@media (max-width: 600px) {
+  .carrera-box {
+    flex: 1 1 100%;
+  }
+}
+
+.boton-ir {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  background: var(--color-principal);
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.boton-ir:hover {
+  background: var(--color-principal-hover);
+  text-decoration: none;
+}
