@@ -1,35 +1,507 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ITQ - Instituto Tecnológico</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos Comunitarios | Instituto Superior</title>
+  <link rel="icon" href="src/img/icono.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script defer src="js/main.js"></script>
 </head>
-<body>
-  <header>
-    <img src="src/img/logo.png" alt="Logo ITQ" id="logo" />
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Institución</a></li>
-        <li><a href="#">Carreras</a></li>
-        <li><a href="#">Admisiones</a></li>
-        <li><a href="#">Contacto</a></li>
+<body class="homepage">
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      <img src="src/img/logo.png" alt="Logo Instituto Superior" />
+    </div>
+    <nav id="nav">
+      <button id="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      <ul id="nav-menu">
+        <li class="current"><a href="index.html">Inicio</a></li>
+        <li><a href="carreras.html">Carreras</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#footer">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Bienvenidos al ITQ</h1>
-    <p>Formamos profesionales técnicos líderes en Ecuador</p>
-    <button onclick="mostrarAlerta()">Más información</button>
+  <!-- Banner -->
+  <section id="banner">
+    <header>
+      <h2>Proyectos de vinculación ITQ</h2>
+      <p>Descubre los proyectos destacados de cada carrera del Instituto Superior Tecnológico Quito.</p>
+    </header>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Instituto Tecnológico Quito</p>
+  <!-- Proyectos -->
+  <section id="proyectos" class="container">
+    <header class="major">
+      <h2>Proyectos Destacados</h2>
+    </header>
+    <div class="row">
+      <div class="col-4">
+        <section class="box">
+          <a href="#" class="image featured"><img src="src/img/proyecto1.jpg" alt="Proyecto 1" /></a>
+          <header><h3>The Eye - Moda con visión</h3></header>
+          <p>La página web y la app móvil de THE EYE están pensadas para ofrecerte una experiencia rápida, sencilla y segura, desde cualquier lugar.</p>
+          <a href="#" class="boton-ir">Ir A</a>
+        </section>
+      </div>
+      <div class="col-4">
+        <section class="box">
+          <a href="#" class="image featured"><img src="src/img/proyecto2.jpg" alt="Proyecto 2" /></a>
+          <header><h3>Yodapets</h3></header>
+          <p>Soluciones innovadoras y personalizadas para el cuidado integral de las mascotas.</p>
+          <a href="#" class="boton-ir">Ir A</a>
+        </section>
+      </div>
+      <div class="col-4">
+        <section class="box">
+          <a href="#" class="image featured"><img src="src/img/proyecto3.jpg" alt="Proyecto 3" /></a>
+          <header><h3>Penumbra</h3></header>
+          <p>Una producción visual sobre los desafíos de la adolescencia.</p>
+          <a href="#" class="boton-ir">Ir A</a>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="container">
+    <header class="major">
+      <h2>Sobre Nosotros</h2>
+    </header>
+    <p>En el Instituto Tecnológico Quito, la creatividad y el conocimiento no solo se aprenden: se transforman en soluciones reales. La página web “Innovación ITQ – Proyectos que transforman” nace como un espacio digital diseñado para visibilizar el talento, la pasión y la capacidad técnica de nuestros estudiantes.
+
+Esta plataforma presenta una vitrina interactiva de los proyectos desarrollados en las distintas carreras del ITQ, enmarcados en el compromiso con la educación de calidad, la innovación tecnológica y el desarrollo sostenible. Desde aplicaciones web, estudios sociales y proyectos audiovisuales, hasta desarrollos con inteligencia artificial, cada iniciativa refleja el potencial transformador de la formación técnica superior.
+
+💡 Diseñada con tecnologías modernas y una experiencia de usuario centrada en la exploración, esta página invita a la comunidad educativa, al sector productivo y a la sociedad en general, a conocer, inspirarse y conectarse con las ideas que están dando forma al futuro.
+
+Porque en el ITQ no solo formamos profesionales, impulsamos proyectos que transforman.</p>
+  </section>
+  <!--Seccion ADRIAN QUIÑONEZ-->
+    <!-- Sección de Proyectos DS1 -->
+  <section class="proyecto-ds">
+    <div class="proyecto-header">
+      <h1 class="proyecto-btn">PROYECTOS DESARROLLO DE SOFTWARE</h1>
+    </div>
+    <div class="proyecto-main">
+      <div class="proyecto-info">
+        <div class="proyecto-titulo">
+          <div class="proyecto-logo">
+            <span class="ds-logo">Ds</span>
+          </div>
+          <span class="ds-titulo">Desarrollo de Software</span>
+        </div>
+        <div class="proyecto-nivel">
+          <strong>Primer Nivel</strong><br>
+          <span>Sensor de pulso cardíaco en Arduino</span>
+        </div>
+      </div>
+      <h2 class="propuesta-titulo">Propuesta</h2>
+      <div class="propuesta-contenido">
+        <div class="propuesta-texto">
+          <p>
+            Desarrollo de una muñequera inteligente vinculada a una aplicación móvil web, diseñada no solo para monitorear el pulso cardíaco del usuario, sino también para detectar anomalías en tiempo real. Cuando el brazalete identifique un ritmo cardíaco irregular o peligroso, enviará una notificación inmediata a través de la aplicación, alertando al usuario o al cuidador.
+          </p>
+          <p>
+            Pero esto no es todo. Este dispositivo ha sido concebido especialmente para brindar apoyo a pacientes en situación de vulnerabilidad o con enfermedades terminales, tales como personas de la tercera edad, pacientes con antecedentes de enfermedades cerebrales, parálisis parcial o total, entre otros.
+          </p>
+          <p>
+            Desarrollo de una muñequera inteligente vinculada a una aplicación móvil web, diseñada no solo para monitorear el pulso cardíaco del usuario, sino también para detectar anomalías en tiempo real. Cuando el brazalete identifique un ritmo cardíaco irregular o peligroso, enviará notificación inmediata a través de la aplicación, alertando al usuario o cuidador.
+          </p>
+        </div>
+        <div class="propuesta-imagenes">
+          <img src="src/img/brazo1.jpg" alt="Muñequera inteligente 1" style="width:100%;margin-bottom:10px;">
+          <img src="src/img/brazo2.jpg" alt="Muñequera inteligente 2" style="width:100%;">
+        </div>
+      </div>
+      <div class="propuesta-nota">
+        <strong>Nota:</strong> Este sistema busca transformar al brazalete y a la aplicación en un “médico en casa”, brindando asistencia vital durante los primeros minutos, que muchas veces son los más decisivos para la vida del paciente
+      </div>
+    </div>
+  </section>
+  <!-- Sección de Proyectos DS2 -->
+  <section class="propuesta-goya">
+  <div class="propuesta-header">
+    <div class="propuesta-logo-titulo">
+      <div class="propuesta-logo">
+        <span class="ds-logo">Ds</span>
+      </div>
+      <span class="ds-titulo">Desarrollo de Software</span>
+    </div>
+    <div class="propuesta-nivel">
+      <strong>Segundo Nivel</strong><br>
+      <span>
+        Desarrollo de una Página Web Informativa para el Emprendimiento Goya Cevichocho, ubicado en la ciudad de Quito, utilizando HTML, CSS y JavaScript en Visual Studio Code
+      </span>
+    </div>
+  </div>
+  <h2 class="propuesta-titulo">Propuesta</h2>
+  <div class="propuesta-contenido-goya">
+    <div class="propuesta-texto-goya">
+      <p>
+        Desarrollar una página web informativa para el negocio Goya Cevichochos con el propósito de difundir información sobre sus productos, historia, servicios y ubicación, presentando el contenido de manera clara, atractiva y accesible para los usuarios, utilizando para ello los lenguajes HTML, CSS y JavaScript en el entorno de desarrollo Visual Studio Code y XAMPP.
+      </p>
+    </div>
+    <div class="propuesta-imagenes-goya" style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <img src="src/img/goya-mockup1.jpg" alt="Mockup página web Goya Cevichocho" style="width:320px;max-width:100%;display:block;margin-bottom:10px;">
+      <img src="src/img/goya-mockup2.jpg" alt="Mockup formulario y mapa Goya Cevichocho" style="width:320px;max-width:100%;display:block;">
+    </div>
+  </div>
+ </section>
+  <!-- Sección de Proyectos DS3 -->
+  <section class="propuesta-theeye">
+    <div class="propuesta-header">
+      <div class="propuesta-logo-titulo">
+        <div class="propuesta-logo">
+          <span class="ds-logo">Ds</span>
+        </div>
+        <span class="ds-titulo">Desarrollo de Software</span>
+      </div>
+      <div class="propuesta-nivel">
+        <strong>Tercer Nivel</strong><br>
+        <span>
+          THE EYE NUESTRA HISTORIA<br>
+          Moda con visión
+        </span>
+      </div>
+    </div>
+    <h2 class="propuesta-titulo">Propuesta</h2>
+    <div class="propuesta-contenido-theeye">
+      <p>
+        La página web y la app móvil de THE EYE están pensadas para ofrecerte una experiencia rápida, sencilla y segura, desde cualquier lugar.<br>
+        <strong>Diseño intuitivo:</strong> Navega fácilmente, personaliza tus prendas y compra sin complicaciones.<br>
+        <strong>Catálogo interactivo:</strong> Mira nuestros productos con fotos reales, detalles y opciones personalizables.<br>
+        <strong>Compra segura:</strong> Múltiples métodos de pago y protección de tus datos.<br>
+        <strong>Responsive:</strong> Se adapta a cualquier dispositivo: celular, tablet o computadora.<br>
+        <strong>Notificaciones:</strong> Recibe novedades, descuentos y el estado de tu pedido al instante.<br>
+        <strong>Soporte en línea:</strong> ¿Dudas? Te ayudamos directo desde la plataforma.
+      </p>
+      <div class="theeye-imagenes">
+        <img src="src/img/theeye1.jpg" alt="THE EYE propuesta 1" style="width:320px;max-width:100%;border-radius:8px;">
+        <img src="src/img/theeye2.jpg" alt="THE EYE propuesta 2" style="width:320px;max-width:100%;border-radius:8px;">
+      </div>
+    </div>
+  </section>
+  <!-- Sección de Proyectos DS4 -->
+  <section class="propuesta-servicios-profesionales">
+    <div class="propuesta-header">
+      <div class="propuesta-logo-titulo">
+        <div class="propuesta-logo">
+          <span class="ds-logo">Ds</span>
+        </div>
+        <span class="ds-titulo">Desarrollo de Software</span>
+      </div>
+      <div class="propuesta-nivel">
+        <strong>Cuarto Nivel</strong><br>
+        <span>Páginas Web para servicios profesionales</span>
+      </div>
+    </div>
+    <h2 class="propuesta-titulo">Propuesta</h2>
+    <div class="propuesta-contenido-servicios">
+      <p>
+        Una página web que presenta las carreras como abogado, arquitecto, médico, cada una tiene una oficina virtual en la cual se detalla la información del mismo, chat al cliente por quien elegirlos, una pequeña bibliografía con una foto, sus especialidades, casos y testimonios, una parte de contacto e información de costos.<br>
+        Así con todas las oficinas virtuales de todas las profesiones mencionadas.
+      </p>
+      <div class="propuesta-imagenes-servicios">
+        <img src="src/img/servicios-mockup1.jpg" alt="Mockup selección de profesión" />
+        <img src="src/img/servicios-mockup2.jpg" alt="Mockup oficina virtual profesional" />
+      </div>
+    </div>
+  </section>
+  <!-- Sección de Proyectos DS5 -->
+  <section class="propuesta-brazo-robotico">
+    <div class="propuesta-header">
+      <div class="propuesta-logo-titulo">
+        <div class="propuesta-logo">
+          <span class="ds-logo">Ds</span>
+        </div>
+        <span class="ds-titulo">Desarrollo de Software</span>
+      </div>
+      <div class="propuesta-nivel">
+        <strong>Quinto Nivel</strong><br>
+        <span>
+          Desarrollo de un brazo robótico con Machine Learning y Reconocimiento Visual para el Control y juego de 3 en Raya
+        </span>
+      </div>
+    </div>
+    <h2 class="propuesta-titulo">Propuesta</h2>
+    <div class="propuesta-contenido-brazo-robotico">
+      <div class="propuesta-texto-brazo-robotico">
+        <p>
+          La capacidad de un sistema robótico para percibir y comprender un entorno visual, como el estado de un juego de mesa, abre nuevas avenidas para la aplicación del aprendizaje automático. Un ejemplo claro es la implementación de un brazo robótico que no solo se controle mediante joysticks, sino que también pueda “ver” y reaccionar al tablero de 3 en raya. Esto implica desde algoritmos de procesamiento de imágenes e interpretación de los objetos y el diseño de algoritmos que permitan al robot interpretar el estado del juego.
+        </p>
+        <p>
+          Algunos objetivos del sistema:
+        </p>
+        <ul>
+          <li>Diseñar e implementar un sistema de control basado en Arduino para el movimiento de las articulaciones del brazo robótico, utilizando servomotores y sensores para lograr precisión y fluidez en sus movimientos.</li>
+          <li>Programar la interfaz en Arduino IDE que permita realizar tareas específicas, como levantar, agarrar y mover objetos, integrando módulos de entrada como joysticks, botones o controladores inalámbricos.</li>
+          <li>Desarrollar algoritmos de Machine Learning para interpretar el estado del tablero de 3 en raya mediante visión por computadora desde las fichas y determinando cuándo se ha producido una jugada válida.</li>
+          <li>Integrar el reconocimiento visual con el control del sistema, de modo que el brazo robótico interprete el juego real y reaccione al estado del juego, colocando una ficha en un casillero, o respondiendo a la jugada del oponente.</li>
+          <li>Explorar la posibilidad de utilizar aprendizaje reforzado para que el brazo robótico aprenda a jugar al 3 en raya de manera autónoma.</li>
+        </ul>
+      </div>
+      <div class="propuesta-imagenes-brazo-robotico">
+        <img src="src/img/brazo-robotico-foto.jpg" alt="Brazo robótico controlado por joysticks y Arduino">
+        <div class="propuesta-imagenes-extra">
+          <img src="src/img/brazo-robotico-grafico1.jpg" alt="Reconocimiento visual tablero 3 en raya">
+          <img src="src/img/brazo-robotico-grafico2.jpg" alt="Interfaz de control brazo robótico">
+          <img src="src/img/brazo-robotico-grafico3.jpg" alt="Resultados Machine Learning 3 en raya">
+        </div>
+      </div>
+      <div class="propuesta-nota-brazo-robotico">
+        <strong>Nota:</strong> Un brazo robótico controlado mediante joysticks y desarrollado sobre la plataforma Arduino.
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h1>PROYECTOS ANIMACIÓN MULTIMEDIA</h1>
+    </div>
+    <div>
+      <div>
+        <span>Am</span>
+        <span>Animación Multimedia</span>
+      </div>
+      <div>
+        <strong>Primer Nivel</strong><br>
+        <span>Producción audiovisual</span><br>
+        <span>Escucha con claridad y a tu ritmo no desesperes.</span>
+      </div>
+    </div>
+    <h2>Propuesta</h2>
+    <div>
+      <p>
+        El mensaje invita a la audiencia a tomarse el tiempo para escuchar, procesar, y no dejarse abrumar, recordando que el crecimiento y la sanación son procesos personales.<br>
+        Este tipo de video busca crear conciencia sobre el estrés emocional, la salud mental y la importancia de escuchar a los demás y a uno mismo.
+      </p>
+    </div>
+    <div>
+      <div>
+        <img src="src/img/animacion1.jpg" alt="Video 1">
+      </div>
+      <div>
+        <img src="src/img/animacion2.jpg" alt="Video 2">
+      </div>
+      <div>
+        <img src="src/img/animacion3.jpg" alt="Video 3">
+      </div>
+    </div>
+    <div>
+      <a href="https://drive.google.com/drive/folders/15sX2DgThsfd7yzOW9T28EXfigjD-G-l0">https://drive.google.com/drive/folders/15sX2DgThsfd7yzOW9T28EXfigjD-G-l0</a>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div>
+        <span>Am</span>
+        <span>Animación Multimedia</span>
+      </div>
+      <div>
+        <strong>Segundo Nivel</strong><br>
+        <span>Videojuegos</span><br>
+        <span>Tankliens</span>
+      </div>
+    </div>
+    <h2>Propuesta</h2>
+    <div>
+      <p>
+        La animación multimedia en videojuegos se encarga de que todo lo que ves y se mueve en un juego tenga coherencia, estilo y realismo, mejorando así la inmersión y la experiencia del jugador.
+      </p>
+    </div>
+    <div>
+      <img src="src/img/tankliens1.jpg" alt="Tankliens menú">
+      <img src="src/img/tankliens2.jpg" alt="Tankliens misión">
+      <img src="src/img/tankliens3.jpg" alt="Tankliens gameplay">
+    </div>
+  </section>
+  <section>
+    <div>
+      <div>
+        <span>Am</span>
+        <span>Animación Multimedia</span>
+      </div>
+      <div>
+        <div>Cuarto Nivel</div>
+        <div>Videojuego</div>
+        <div>CANS</div>
+      </div>
+    </div>
+    <h2>Propuesta</h2>
+    <div>
+      Video juego de búsqueda de latas, en un entorno animado que sigue completando niveles para avanzar y salir.
+    </div>
+    <div>
+      <div>
+        <img src="src/img/cans1.jpg" alt="CANS menú">
+      </div>
+      <div>
+        <img src="src/img/cans2.jpg" alt="CANS gameplay 1">
+      </div>
+      <div>
+        <img src="src/img/cans3.jpg" alt="CANS gameplay 2">
+        <div>
+          Recoge todas las latas para salir.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div>
+        <span>Am</span>
+        <span>Animación Multimedia</span>
+      </div>
+      <div>
+        <div>Quinto Nivel</div>
+        <div>Producción</div>
+        <div>Penumbras</div>
+      </div>
+    </div>
+    <h2>Propuesta</h2>
+    <div>
+      <p>
+        Esta ciudad de la que hablas no es solo un lugar físico. Es una metáfora de la 
+        adolescencia: una etapa en la que pensar deja de ser simple, y empieza a tener 
+        consecuencias emocionales, físicas, incluso sociales. En esta ciudad, pensar "te 
+        cambia", porque ya no es un ejercicio neutro. Pensar demasiado te hace dudar, te 
+        hace temer, te hace sentir observado, juzgado, pequeño… aunque no lo seas. 
+        A los 14, las decisiones pequeñas —como elegir ropa o mandar un mensaje— ya 
+        no son simples. Se convierten en batallas internas, en laberintos mentales donde 
+        el pensamiento se vuelve enemigo. La cabeza "crece" con pensamientos que 
+        pesan, que abruman, que no paran. Y el miedo también crece, porque ya no es solo 
+        miedo al mundo, sino a uno mismo. 
+        Y sin embargo, en esa ciudad todos los demás también viven con ese mismo 
+        miedo. Aprenden a caminar con él, a disfrazarlo de confianza, de risa, de 
+        indiferencia. Tú apenas estás comenzando a conocerlo, pero reconocerlo ya es un 
+        primer paso. Tal vez no se trate de vencerlo, sino de encontrar tu forma de 
+        caminar con él, sin que te ahogue.
+      </p>
+    </div>
+    <div>
+      <div>
+        <img src="src/img/penumbras-logo.jpg" alt="Logo Penumbras">
+      </div>
+      <div>
+        <div>
+          <span>Producido por:</span>
+          <span>Lizeth Loján</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="src/img/penumbras1.jpg" alt="Escena 1 Penumbras">
+        <img src="src/img/penumbras2.jpg" alt="Escena 2 Penumbras">
+        <img src="src/img/penumbras3.jpg" alt="Escena 3 Penumbras">
+      </div>
+      <div>
+        <img src="src/img/penumbras4.jpg" alt="Escena 4 Penumbras">
+        <img src="src/img/penumbras5.jpg" alt="Escena 5 Penumbras">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <div>
+        <span>Am</span>
+        <span>Animación Multimedia</span>
+      </div>
+      <div>
+        <div>Tercer Nivel</div>
+        <div>Producción</div>
+        <div>Damas Dragón</div>
+      </div>
+    </div>
+    <h2>Propuesta</h2>
+    <div>
+      <p>
+        Las Damas Dragón, creadoras del cielo, la tierra y todas las criaturas, observaban con gran sabiduría y curiosidad el desarrollo de sus creaciones. En su inmenso poder y entendimiento, decidieron asignar diferentes duraciones de vida a las criaturas: algunas tendrían una existencia breve pero intensa, mientras que otras gozarían de una vida eterna.<br>
+        Al principio, parecía lógico: una vida eterna permitiría alcanzar toda experiencia posible, todo conocimiento, toda plenitud. Sin embargo, con el paso del tiempo, las Damas comenzaron a notar un fenómeno inesperado. Aquellas criaturas con vidas cortas parecían vivir con mayor intensidad, apreciaban cada momento, sentían con más fuerza el amor, el miedo, la alegría y la tristeza. Para ellas, la muerte no era una tragedia, sino parte del ciclo, una culminación natural que daba sentido a la existencia.<br>
+        En cambio, las criaturas eternas, al no tener límite, perdían el valor de cada instante. Lo que era raro se volvía común, lo que era significativo se volvía rutina. La inmortalidad no traía felicidad, sino apatía. Sin el fin, no había propósito. Sin muerte, la vida perdía su intensidad.<br>
+        Así, las Damas Dragón entendieron una lección profunda: la finitud da valor a la existencia. La muerte no es enemiga de la vida, sino su marco, su contraste necesario. Decidieron entonces reequilibrar los tiempos de vida, acortando incluso algunas eternidades para que, en su brevedad, las criaturas volvieran a encontrar sentido, pasión y propósito.
+      </p>
+    </div>
+    <div>
+      <div>
+        <img src="src/img/damas-dragon-titulo.jpg" alt="Damas Dragón Título">
+        <div>
+          <div>Animación y edición:<br>Santiago Narváez</div>
+          <div>Historia original:<br>Jennifer Pilco</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="src/img/damas-dragon-escena1.jpg" alt="Escena Damas Dragón 1">
+      </div>
+      <div>
+        <img src="src/img/damas-dragon-escena2.jpg" alt="Escena Damas Dragón 2">
+      </div>
+      <div>
+        <img src="src/img/damas-dragon-escena3.jpg" alt="Escena Damas Dragón 3">
+      </div>
+      <div>
+        <img src="src/img/damas-dragon-escena4.jpg" alt="Escena Damas Dragón 4">
+      </div>
+      <div>
+        <img src="src/img/damas-dragon-escena5.jpg" alt="Escena Damas Dragón 5">
+      </div>
+      <div>
+        <img src="src/img/damas-dragon-escena6.jpg" alt="Escena Damas Dragón 6">
+      </div>
+    </div>
+  </section>
+ <!--fin seccion Adrian Quiñonez-->
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-logo">
+      <img src="src/img/logo-footer.png" alt="Instituto Superior">
+      <p>Innovación ITQ - Programas que transforman</p>
+    </div>
+
+    <div class="footer-about">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="https://itq.edu.ec/nosotros/" target="_blank">Sobre nosotros</a></li>
+        <li><a href="https://itq.edu.ec/blog/" target="_blank">Blog</a></li>
+        <li><a href="https://itq.edu.ec/itq-store/" target="_blank">ITQ Store</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Enlaces Útiles</h3>
+      <ul>
+        <li><a href="https://itq.edu.ec/admisiones/" target="_blank">Admisiones</a></li>
+        <li><a href="https://itq.academicok.com/" target="_blank" >Sistema Académico</a></li>
+        <li><a href="https://itq.edu.ec/contacto-2/"target="_blank" >Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Información de Contacto</h3>
+      <ul>
+        <li>Dirección: Antonio de Ulloa N28-30 y Diego de Atienza Esq., Quito</li>
+        <li>Tel: (+593) 96 356 1961</li>
+        <li>Email: admisiones@itq.edu.ec</li>
+      </ul>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/InstitutoQuitoITQ" target="_blank" class="fab fa-facebook-f"></a></li>
+        <li><a href="https://bit.ly/3Z6T0Tt" class="fab fa-whatsapp"></a></li>
+        <li><a href="https://www.instagram.com/InstitutoQuitoITQ" target="_blank" class="fab fa-instagram"></a></li>
+        <li><a href="https://ec.linkedin.com/company/institutoquitoitq" target="_blank" class="fab fa-linkedin-in"></a></li>
+        <li><a href="https://www.youtube.com/@InstitutoQuitoITQ" target="_blank" class="fab fa-youtube"></a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Instituto Superior. Todos los derechos reservados.
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
