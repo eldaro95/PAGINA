@@ -507,3 +507,53 @@ h3.proyecto-nivelam {
     text-align: left;
   }
 }
+
+@media (max-width: 767px) {
+  .proyecto-carrera {
+    /* Asegura que los elementos dentro de la sección se apilen */
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+  }
+
+  .proyecto-header {
+    /* Este es el contenedor del logo y el título/nivel */
+    display: flex;
+    flex-direction: column; /* Apila el logo y el bloque de título/nivel */
+    align-items: center; /* Centra el logo y el bloque de título/nivel horizontalmente */
+    text-align: center; /* Centra el texto dentro del header */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    gap: 1.5em; /* Espacio entre el logo y el bloque de título/nivel */
+    /* Puedes ajustar este 'gap' para más o menos separación */
+  }
+
+  /* Ajustes para el logo de la carrera */
+  .logo-carrera {
+    margin-top: 0; /* Elimina cualquier margen superior no deseado si existiera */
+    margin-bottom: 0.8em; /* Añade un espacio debajo del logo para separarlo */
+    max-height: 70px; /* Puedes ajustar el tamaño del logo para móvil si es muy grande */
+    width: auto; /* Asegura que la imagen mantenga su proporción */
+  }
+
+  /* Contenedor del nivel y el título del proyecto (las tienes como .proyecto-titulo en el HTML) */
+  .proyecto-titulo {
+    display: flex;
+    flex-direction: column; /* Asegura que el nivel y el título se apilen */
+    align-items: center; /* Centra el texto del nivel y el título */
+    gap: 0.5em; /* Espacio entre el "Nivel" y el título del proyecto */
+  }
+
+  /* Estilo específico para el h3 del "Nivel" */
+  h3.proyecto-nivel {
+    margin-bottom: 0; /* Elimina cualquier margen inferior por defecto si lo hay */
+    /* Puedes ajustar el padding o font-size aquí si quieres que el "Nivel" sea más compacto en móvil */
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+  }
+
+  /* Estilo para el h3 del título del proyecto (que no es el nivel) */
+  .proyecto-titulo h3:not(.proyecto-nivel) {
+    font-size: 1.2em; /* Hace el título del proyecto un poco más pequeño para móvil */
+    line-height: 1.3; /* Ajusta la altura de línea para mejor legibilidad */
+    margin-top: 0; /* Elimina cualquier margen superior por defecto */
+  }
+}
