@@ -353,10 +353,12 @@ header.major h2 {
   flex-direction: column;
   justify-content: space-between;
   height: auto;
+  color: white;
 }
 
 .contenido-carrera {
   flex-grow: 1;
+
 }
 
 .carrera-box h3 {
@@ -367,6 +369,7 @@ header.major h2 {
 .carrera-box p {
   font-size: 0.95em;
   line-height: 1.6;
+  font-size: large;
 }
 
 .carrera-box .image.featured {
