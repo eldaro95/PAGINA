@@ -40,7 +40,7 @@ a:hover {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 1em 0;
 }
@@ -94,7 +94,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px) {
   #nav-toggle {
     display: block;
   }
@@ -137,16 +137,24 @@ a:hover {
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px) {
   #banner header {
     max-width: 100%;
     margin: 0;
     text-align: center;
   }
+  #banner h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #banner p { 
+    font-size: 0.5em;
+    text-align: center;
+  }
 }
 
 #banner h2 {
-  font-size: 2.2em;
+  font-size: 3.5em;
   margin-bottom: 0.3em;
   margin-top: 0;
   text-shadow: 1px 1px 2px black;
@@ -154,7 +162,7 @@ a:hover {
 }
 
 #banner p {
-  font-size: 1.1em;
+  font-size: 2em;
   margin-top: 0;
   text-shadow: 1px 1px 2px black;
   text-align: right;
@@ -309,13 +317,13 @@ header.major h2 {
 }
 
 .carreras-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2em;
-  justify-content: center;
-  max-width: 1500px;
-  margin: 0 auto;
+  justify-items: center; /* 👈 Centra los elementos dentro de cada celda */
   padding: 2em 1em;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .carrera-box {
@@ -323,14 +331,14 @@ header.major h2 {
   border: 1px solid #333;
   border-radius: 5px;
   padding: 1.5em;
-  flex: 1 1 calc(33.333% - 2em);
-  max-width: 350px;
+  width: 100%;
+  max-width: 400px;  /* 👈 LIMITA el ancho visual */
+  margin: 0 auto;     /* 👈 CENTRA individualmente si queda sola */
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: auto;
   color: white;
 }
 
@@ -361,6 +369,14 @@ header.major h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.carrera-box .image.featured :hover {
+  cursor: pointer;
+}
+
+.carrera-box:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 900px) {
@@ -464,6 +480,10 @@ header.major h2 {
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
+.proyecto-imagenes img:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .proyecto-imagenes img {
     flex: 1 1 100%;
@@ -474,3 +494,38 @@ header.major h2 {
     text-align: left;
   }
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
