@@ -230,7 +230,7 @@ header.major h2 {
 #nosotros {
   background: #000000;
   color: white;
-  padding: 3em 1em;
+  padding: 3em 2em;
   border-top: 10px solid var(--color-principal);
   border-bottom: 10px solid var(--color-principal);
 }
