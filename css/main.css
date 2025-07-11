@@ -178,7 +178,7 @@ a:hover {
 
 /* Secciones */
 section {
-  padding: 3em 0;
+  padding: 1em 0;
 }
 
 header.major {
@@ -427,7 +427,6 @@ padding: 2em 2em;
 .proyecto-carrera {
   background: #f4f4f4;
   border-radius: 8px;
-  padding: 2em;
   margin: 2em auto;
   max-width: 1800px;
   width: 90%;
