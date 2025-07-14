@@ -1,6 +1,4 @@
-/* ==============================
-   VARIABLES DE COLOR
-   ============================== */
+/*Varaibles de color*/
 :root {
   --color-principal: #E30613;
   --color-principal-hover: #ff3d3d;
@@ -174,8 +172,6 @@ a:hover {
   }
 }
 
-
-
 /* Secciones */
 section {
   padding: 1em 0;
@@ -211,8 +207,6 @@ header.major h2 {
 .box p {
   text-align: justify;
 }
-
-
 
 .box .image.featured {
   width: 100%;
@@ -327,9 +321,8 @@ header.major h2 {
 .carreras-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* 👈 centra las tarjetas horizontalmente */
+  justify-content: center;
   gap: 2em 4em;
-  /*padding: 2em 4em;*/
   max-width: 90%;
   margin: 0 auto;
 }
@@ -474,9 +467,6 @@ padding: 2em 2em;
   transition: background 0.3s ease;
 }
 
-
-
-
 .proyecto-imagenes {
   display: flex;
   flex-wrap: wrap;
@@ -498,6 +488,15 @@ padding: 2em 2em;
 
 .proyecto-imagenes img:hover {
   cursor: pointer;
+}
+
+.card-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top; 
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -524,6 +523,7 @@ padding: 2em 2em;
   background: rgba(0,0,0,0.8);
 }
 
+/* Visualización de imagenes */
 .modal-content {
   margin: auto;
   display: block;
@@ -539,11 +539,4 @@ padding: 2em 2em;
   font-weight: bold;
   cursor: pointer;
 }
-.card-image img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  object-position: top; 
-  cursor: pointer;
-  border-radius: 8px;
-}
+
